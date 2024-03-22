@@ -30,9 +30,14 @@ function Storage() {
         <input type="file" onChange={(e)=>setImageUpload(e.target.files[0])} />
         <button className='border p-3 m-4 bg-blue-400 rounded-full' onClick={uploadImage}>Upload Image</button>
         <br/> <br/>
-        <div className='flex flex-row'>
+        <div className='flex flex-wrap'>
         {imageList.map((url)=>{
-            return <img className='flex flex-row' src={url} width={400} height={400}/>
+            return (
+              <div className='block'>
+              <img className='flex  hover:scale-105 cursor-pointer' src={url} alt='newimg' width={400} height={400}/>
+            </div>
+            )
+            
         })}
         </div>
         
