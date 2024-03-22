@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Search from "./components/Search";
 import Storage from "./components/Storage";
+import SubFooter from "./components/SubFooter";
 import SubNav from "./components/SubNav";
 import ImageSlider from "./components/images/ImageSlider";
 
@@ -16,6 +17,7 @@ function App() {
      <ImageSlider/>
      <Storage/>
      <Footer/>
+     <SubFooter/>
     </div>
   );
 }
